@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Mario Rodríguez</title>
+  <style>
+    body {
+      background-color: #e8eef6;
+      color: #222;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 40px;
+    }
+
+    form {
+      background-color: #f7f9fc;
+      border: 1px solid #c7d8eb;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #b5cce5;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #a8d0f0;
+      color: #3d3c3b;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #8fc4e8;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      max-width: 500px;
+      margin: 0 auto 20px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Contacto</h2>
+  <p>
+    Si quieres ponerte en contacto conmigo, puedes completar este formulario 
+    o escribirme por 
+    <a href="https://www.instagram.com/mariio_rodriiguezz7/" target="_blank">Instagram</a>.
+  </p>
+
+  <!-- Formulario NO funcional -->
+  <form onsubmit="event.preventDefault(); alert('Este formulario es solo de demostración.');">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo electrónico" required>
+    <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+
+  <p>
+    <a href="index.html">← Volver a la página principal</a>
+  </p>
+
+</body>
+</html>
